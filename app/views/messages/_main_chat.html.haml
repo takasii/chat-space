@@ -1,0 +1,33 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2{class: "main-header__left-box__current-group" }test
+      %ul{class: "main-header__left-box__current-group"}Member:masa
+    %a{href:"＃"}
+      .main-header__edit-btn Edit
+  .messages
+    .comment
+      .comment__content
+        .comment__content__masa masa
+        .comment__content__date
+          2019/11/20(Web)17:43:01
+      .comment__morning
+        おはよう！
+      .comment__second
+        .comment__second__message
+          .comment__second__message__masa
+            masa 
+          .comment__second__message__date
+            2019/11/20(Wed)17:43:34
+        .comment__second__weather
+          今日は夜から雨
+  .form
+    %form{class:"new_message"}
+      .input-box
+        %input{placeholder: "type a message",class:"input-box__holder"}
+        %label{class: "input-box__image"}
+          = icon('fa', 'image')
+          %input{type: "file",class:"file"}
+      .send
+        Send
+    
