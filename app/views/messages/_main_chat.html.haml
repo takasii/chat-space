@@ -3,8 +3,9 @@
     .main-header__left-box
       %h2{class: "main-header__left-box__current-group" }test
       %ul{class: "main-header__left-box__current-group"}Member:masa
-    %a{href:"＃"}
-      .main-header__edit-btn Edit
+    .main-header__edit-btn 
+      = link_to '#', class:"main-header__btn" do
+        Edit
   .messages
     .comment
       .comment__content
